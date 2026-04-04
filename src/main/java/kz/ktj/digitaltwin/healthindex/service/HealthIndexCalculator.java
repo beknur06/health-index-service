@@ -164,7 +164,7 @@ public class HealthIndexCalculator {
     }
 
     private boolean isApplicable(String applicableTo, String locoType) {
-        if ("BOTH".equals(applicableTo)) return true;
+        if ("BOTH".equals(applicableTo) || "ANY".equals(applicableTo)) return true;
         return applicableTo.equals(locoType);
     }
 

@@ -41,7 +41,6 @@ public class HealthParamWeight {
     @Column(name = "criticalThreshold", nullable = false)
     private double criticalThreshold = 0.8;
 
-    /** Применимо к KZ8A, TE33A, или обоим */
     @Column(name = "applicableTo", nullable = false)
     private String applicableTo = "BOTH";
 }
